@@ -1,10 +1,18 @@
 {
   "compilerOptions": {
+    "ignoreDeprecations": "5.0",
+    "paths": {
+      "@domain/*": [
+        "./src/domain/*"
+      ]
+    },                                                
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "types": ["bun", "node"], // <--- AJOUTE "bun" ICI
+    "types": ["bun", "node"], //
     "strict": true,
+    "jsx": "react-jsx",
+    "jsxImportSource":"hono/jsx",
     "skipLibCheck": true
   }
 }
